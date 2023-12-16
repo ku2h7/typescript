@@ -18,6 +18,12 @@ npm install -g typescript
 npm i ts-node
 ```
 
+### How to use ts-node
+
+```
+ts-node <filename.ts>
+```
+
 ## Setup tsconfig.json
 
 ```
