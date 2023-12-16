@@ -1,5 +1,7 @@
 # Start
 
+## Install Typescript
+
 ```
 npm install typescript
 ```
