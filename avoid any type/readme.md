@@ -71,7 +71,7 @@ Menggunakan any dalam TypeScript menghilangkan banyak keuntungan dari tipe stati
 
 6. Gunakan Strict Mode:
 
-    Aktifkan strict mode dalam konfigurasi TypeScript Anda (**"strict": true** dalam **tsconfig.json**). Ini akan memberikan pemberitahuan dan kesalahan lebih banyak selama kompilasi untuk membantu Anda mengidentifikasi potensi masalah dalam kode.
+    Aktifkan strict mode dalam konfigurasi TypeScript Kita (**"strict": true** dalam **tsconfig.json**). Ini akan memberikan pemberitahuan dan kesalahan lebih banyak selama kompilasi untuk membantu Kita mengidentifikasi potensi masalah dalam kode.
 
     Penting untuk diingat bahwa penggunaan **any** biasanya tidak dianjurkan kecuali dalam kasus-kasus tertentu yang memang membutuhkan fleksibilitas tinggi, dan dalam kasus tersebut, pastikan untuk mencakup validasi atau pengujian ekstra agar kode tetap aman.
 
