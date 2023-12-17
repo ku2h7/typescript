@@ -1,6 +1,6 @@
 # Modules
 
-Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal atau modul eksternal untuk memisahkan dan mengelompokkan fungsi, kelas, atau variabel dalam file atau proyek yang berbeda. Berikut adalah contoh cara menggunakan modul di TypeScript:
+Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal atau modul eksternal untuk memisahkan dan mengelompokkan function, class, atau variable dalam file atau proyek yang berbeda. Berikut adalah contoh cara menggunakan modul di TypeScript:
 
 **Catatan: Sebelum menggunakan modul, pastikan Kita telah mengonfigurasi proyek TypeScript Kita menggunakan file tsconfig.json dan mengaktifkan opsi "module": "commonjs" atau opsi modul lainnya.**
 
@@ -12,7 +12,7 @@ Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal 
     namespace Matematika
     ```
 
-2. Mendefinisikan kelas di dalam modul
+2. Mendefinisikan class di dalam modul
 
     ```
     export class Kalkulator {
@@ -22,7 +22,7 @@ Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal 
     }
     ```
 
-3. Mendefinisikan fungsi di dalam modul
+3. Mendefinisikan function di dalam modul
 
     ```
     export function kali(a: number, b: number): number {
@@ -30,14 +30,14 @@ Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal 
     }
     ```
 
-4. Menggunakan kelas dari modul internal
+4. Menggunakan class dari modul internal
 
     ```
     const kalkulator = new Matematika.Kalkulator();
     console.log(kalkulator.tambah(2, 3));  // Output: 5
     ```
 
-5. Menggunakan fungsi dari modul internal
+5. Menggunakan function dari modul internal
 
     ```
     console.log(Matematika.kali(4, 5));  // Output: 20
@@ -46,10 +46,10 @@ Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal 
 ### Penjelasan
 
 - **Baris 1:** Mendefinisikan modul internal (namespace) **Matematika**.
-- **Baris 2:** Mendefinisikan kelas **Kalkulator** di dalam modul dan mengekspornya.
-- **Baris 3:** Mendefinisikan fungsi **kali** di dalam modul dan mengekspornya.
-- **Baris 4:** Menggunakan kelas **Kalkulator** dari modul internal.
-- **Baris 5:** Menggunakan fungsi **kali** dari modul internal.
+- **Baris 2:** Mendefinisikan class **Kalkulator** di dalam modul dan mengekspornya.
+- **Baris 3:** Mendefinisikan function **kali** di dalam modul dan mengekspornya.
+- **Baris 4:** Menggunakan class **Kalkulator** dari modul internal.
+- **Baris 5:** Menggunakan function **kali** dari modul internal.
 
 ## External Modules
 
@@ -73,14 +73,14 @@ Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal 
     import { Kalkulator, kali } from "./matematika";
     ```
 
-3. Menggunakan kelas dari modul eksternal
+3. Menggunakan class dari modul eksternal
 
     ```
     const kalkulator = new Kalkulator();
     console.log(kalkulator.tambah(2, 3));  // Output: 5
     ```
 
-4. Menggunakan fungsi dari modul eksternal
+4. Menggunakan function dari modul eksternal
 
     ```
     console.log(kali(4, 5));  // Output: 20
@@ -88,9 +88,9 @@ Dalam TypeScript, Kita dapat mengorganisir kode Kita menggunakan modul internal 
 
 ### Penjelasan
 
-- **Baris 1:** Mendefinisikan file matematika.ts sebagai modul eksternal dengan mengekspor kelas Kalkulator dan fungsi kali.
+- **Baris 1:** Mendefinisikan file matematika.ts sebagai modul eksternal dengan mengekspor class Kalkulator dan function kali.
 - **Baris 2:** Menggunakan modul eksternal di file lain dengan pernyataan import.
-- **Baris 3:** Menggunakan kelas Kalkulator dari modul eksternal.
-- **Baris 4:** Menggunakan fungsi kali dari modul eksternal.
+- **Baris 3:** Menggunakan class Kalkulator dari modul eksternal.
+- **Baris 4:** Menggunakan function kali dari modul eksternal.
 
-Dengan menggunakan modul, Kita dapat mengatur kode Kita dengan lebih baik dan mengelompokkan fungsionalitas terkait ke dalam unit yang lebih terpisah.
+Dengan menggunakan modul, Kita dapat mengatur kode Kita dengan lebih baik dan mengelompokkan functiononalitas terkait ke dalam unit yang lebih terpisah.

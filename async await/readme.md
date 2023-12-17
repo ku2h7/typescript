@@ -2,7 +2,7 @@
 
 Async/await adalah fitur JavaScript yang memudahkan penanganan operasi asynchronous. TypeScript mendukung async/await dan dapat digunakan dengan mudah. Berikut adalah contoh penggunaan async/await dalam TypeScript:
 
-1. Fungsi asynchronous yang mengembalikan Promise
+1. Function asynchronous yang mengembalikan Promise
 
     ```
     function ambilData(): Promise<string> {
@@ -14,7 +14,7 @@ Async/await adalah fitur JavaScript yang memudahkan penanganan operasi asynchron
     }
     ```
 
-2. Fungsi utama dengan async/await
+2. Function utama dengan async/await
 
     ```
     async function main() {
@@ -50,7 +50,7 @@ Async/await adalah fitur JavaScript yang memudahkan penanganan operasi asynchron
     console.error("Terjadi kesalahan:", error);
     ```
 
-6. Memanggil fungsi utama
+6. Memanggil function utama
 
     ```
     main();
@@ -58,16 +58,16 @@ Async/await adalah fitur JavaScript yang memudahkan penanganan operasi asynchron
 
 ### Penjelasan
 
-- **Baris 1:** Membuat fungsi **ambilData** yang mengembalikan Promise dengan tipe string. Fungsi ini mensimulasikan operasi asynchronous menggunakan **setTimeout**.
+- **Baris 1:** Membuat function **ambilData** yang mengembalikan Promise dengan tipe string. Function ini mensimulasikan operasi asynchronous menggunakan **setTimeout**.
 
-- **Baris 2:** Membuat fungsi utama **main** dengan keyword **async**. Fungsi ini akan menggunakan async/await untuk menangani operasi asynchronous.
+- **Baris 2:** Membuat function utama **main** dengan keyword **async**. Function ini akan menggunakan async/await untuk menangani operasi asynchronous.
 
-- **Baris 3:** Menggunakan **await** untuk menunggu hasil dari operasi asynchronous yang didefinisikan di dalam fungsi ambilData.
+- **Baris 3:** Menggunakan **await** untuk menunggu hasil dari operasi asynchronous yang didefinisikan di dalam function ambilData.
 
 - **Baris 4:** Setelah operasi selesai, melanjutkan eksekusi kode dengan hasil yang diterima.
 
 - **Baris 5:** Menggunakan blok **try-catch** untuk menangani error jika terjadi kesalahan dalam operasi asynchronous.
 
-- **Baris 6:** Memanggil fungsi utama **main**. Karena **main** menggunakan async/await, pemanggilannya harus di dalam async function atau dalam blok **then** pada Promise.
+- **Baris 6:** Memanggil function utama **main**. Karena **main** menggunakan async/await, pemanggilannya harus di dalam async function atau dalam blok **then** pada Promise.
 
 Dengan menggunakan async/await, kode asynchronous dapat ditulis dengan lebih bersih dan lebih mudah dipahami, terutama ketika ada banyak operasi asynchronous yang perlu diurutkan atau dikombinasikan.

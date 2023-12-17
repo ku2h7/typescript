@@ -10,7 +10,7 @@ Union types di TypeScript memungkinkan Kita mendefinisikan bahwa sebuah nilai da
     type ID = string | number;
     ```
 
-2. Fungsi yang menerima parameter bertipe union
+2. Function yang menerima parameter bertipe union
 
     ```
     function cetakID(id: ID): void
@@ -26,13 +26,13 @@ Union types di TypeScript memungkinkan Kita mendefinisikan bahwa sebuah nilai da
     }
     ```
 
-4. Memanggil fungsi dengan string sebagai argumen
+4. Memanggil function dengan string sebagai argumen
 
     ```
     cetakID('ABC123');
     ```
 
-5. Memanggil fungsi dengan number sebagai argumen
+5. Memanggil function dengan number sebagai argumen
 
     ```
     cetakID(456);
@@ -44,7 +44,7 @@ Union types di TypeScript memungkinkan Kita mendefinisikan bahwa sebuah nilai da
     type HasStatus = { status: 'success' | 'error' };
     ```
 
-7. Fungsi dengan nilai kembalian bertipe union
+7. Function dengan nilai kembalian bertipe union
 
     ```
     function getRandomValue(): number | string {
@@ -52,7 +52,7 @@ Union types di TypeScript memungkinkan Kita mendefinisikan bahwa sebuah nilai da
     }
     ```
 
-8. Menyimpan nilai kembalian dalam variabel bertipe union
+8. Menyimpan nilai kembalian dalam variable bertipe union
 
     ```
     const result: number | string = getRandomValue();
@@ -71,11 +71,11 @@ Union types di TypeScript memungkinkan Kita mendefinisikan bahwa sebuah nilai da
 ### Penjelasan
 
 - Pada baris 1, kita mendefinisikan union type **ID** yang dapat berupa string atau number.
-- Pada baris 2, kita membuat fungsi **cetakID** yang menerima parameter bertipe **ID**.
-- Pada baris 4 dan 5, kita memanggil fungsi **cetakID** dengan parameter berupa string dan number.
+- Pada baris 2, kita membuat function **cetakID** yang menerima parameter bertipe **ID**.
+- Pada baris 4 dan 5, kita memanggil function **cetakID** dengan parameter berupa string dan number.
 - Pada baris 6, kita mendefinisikan objek dengan properti **status** yang dapat bernilai '**success**' atau '**error**'.
-- Pada baris 7, kita mendefinisikan fungsi **getRandomValue** yang mengembalikan nilai bertipe union.
-- Pada baris 8 dan 9, kita menggunakan nilai kembalian fungsi **getRandomValue** dengan menyimpannya dalam variabel bertipe union dan memeriksa tipe sebelum penggunaan.
+- Pada baris 7, kita mendefinisikan function **getRandomValue** yang mengembalikan nilai bertipe union.
+- Pada baris 8 dan 9, kita menggunakan nilai kembalian function **getRandomValue** dengan menyimpannya dalam variable bertipe union dan memeriksa tipe sebelum penggunaan.
 
 ## Enums
 
@@ -127,9 +127,9 @@ Enums di TypeScript memungkinkan Kita mendefinisikan satu set nilai yang memilik
 ### Penjelasan
 
 - Pada baris 1, kita mendefinisikan enum Warna dengan nilai-nilai default yang dimulai dari 0.
-- Pada baris 2, kita menginisialisasi variabel warnaPilihan dengan nilai dari enum Warna.
-- Pada baris 3, kita mencetak nilai dari variabel warnaPilihan.
+- Pada baris 2, kita menginisialisasi variable warnaPilihan dengan nilai dari enum Warna.
+- Pada baris 3, kita mencetak nilai dari variable warnaPilihan.
 - Pada baris 4, kita mendefinisikan enum Status dengan nilai enum yang diinisialisasi dengan string.
-- Pada baris 5, kita menginisialisasi variabel statusPengguna dengan nilai dari enum Status.
-- Pada baris 6, kita mencetak nilai dari variabel statusPengguna.
+- Pada baris 5, kita menginisialisasi variable statusPengguna dengan nilai dari enum Status.
+- Pada baris 6, kita mencetak nilai dari variable statusPengguna.
 

@@ -2,7 +2,7 @@
 
 Menggunakan any dalam TypeScript menghilangkan banyak keuntungan dari tipe statis yang kuat yang ditawarkan oleh TypeScript. Oleh karena itu, sebaiknya hindari penggunaan any sebisa mungkin dan usahakan mendeklarasikan tipe yang spesifik untuk meningkatkan keamanan dan kejelasan kode. Berikut adalah beberapa contoh penggunaan untuk menghindari any:
 
-1. Deklarasikan Tipe Variabel:
+1. Deklarasikan Tipe Variable:
 
     ```
     // Hindari penggunaan any
@@ -12,15 +12,15 @@ Menggunakan any dalam TypeScript menghilangkan banyak keuntungan dari tipe stati
     let myString: string = "Hello, TypeScript!";
     ```
 
-2. Deklarasikan Tipe Fungsi:
+2. Deklarasikan Tipe Function:
 
     ```
-    // Hindari penggunaan any untuk parameter dan hasil fungsi
+    // Hindari penggunaan any untuk parameter dan hasil function
     function addNumbers(x: any, y: any): any {
       return x + y;
     }
 
-    // Gunakan tipe yang spesifik untuk parameter dan hasil fungsi
+    // Gunakan tipe yang spesifik untuk parameter dan hasil function
     function addNumbersTyped(x: number, y: number): number {
       return x + y;
     }
@@ -43,12 +43,12 @@ Menggunakan any dalam TypeScript menghilangkan banyak keuntungan dari tipe stati
 4. Gunakan Tipe Generik:
 
     ```
-    // Hindari penggunaan any dalam fungsi generik
+    // Hindari penggunaan any dalam generics function
     function identity(value: any): any {
       return value;
     }
 
-    // Gunakan tipe generik
+    // Gunakan tipe generics
     function identityTyped<T>(value: T): T {
       return value;
     }

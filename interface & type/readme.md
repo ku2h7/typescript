@@ -14,13 +14,13 @@ Dalam TypeScript, *interface* digunakan untuk mendefinisikan kontrak tipe atau b
     }
     ```
 
-2. Membuat fungsi yang menerima parameter bertipe interface
+2. Membuat function yang menerima parameter bertipe interface
 
     ```
     function sambutPengguna(user: Pengguna): void
     ```
 
-3. Menggunakan properti dari interface dalam fungsi
+3. Menggunakan properti dari interface dalam function
 
     ```
     console.log(`Halo, ${user.nama}!`);
@@ -46,7 +46,7 @@ Dalam TypeScript, *interface* digunakan untuk mendefinisikan kontrak tipe atau b
     };
     ```
 
-6. Memanggil fungsi dengan objek sebagai argumen
+6. Memanggil function dengan objek sebagai argumen
 
     ```
     sambutPengguna(pengguna1);
@@ -62,7 +62,7 @@ Dalam TypeScript, *interface* digunakan untuk mendefinisikan kontrak tipe atau b
     };
     ```
 
-8. Memanggil fungsi dengan objek lain sebagai argumen
+8. Memanggil function dengan objek lain sebagai argumen
 
     ```
     sambutPengguna(pengguna2);
@@ -70,7 +70,7 @@ Dalam TypeScript, *interface* digunakan untuk mendefinisikan kontrak tipe atau b
 
 ### Penjelasan
 
-Kita mendefinisikan interface **Pengguna** yang memiliki beberapa properti, termasuk properti opsional (**pekerjaan**). Kemudian, kita membuat fungsi **sambutPengguna** yang menerima parameter bertipe **Pengguna** dan mencetak informasi berdasarkan properti yang ada. Objek **pengguna1** dan **pengguna2** dibuat sesuai dengan interface **Pengguna** dan digunakan sebagai argumen saat memanggil fungsi.
+Kita mendefinisikan interface **Pengguna** yang memiliki beberapa properti, termasuk properti opsional (**pekerjaan**). Kemudian, kita membuat function **sambutPengguna** yang menerima parameter bertipe **Pengguna** dan mencetak informasi berdasarkan properti yang ada. Objek **pengguna1** dan **pengguna2** dibuat sesuai dengan interface **Pengguna** dan digunakan sebagai argumen saat memanggil function.
 
 ## Interface Inheritance
 
@@ -157,13 +157,13 @@ Dalam TypeScript, *type* digunakan untuk mendefinisikan kontrak tipe atau bentuk
     }
     ```
 
-2. Membuat fungsi yang menerima parameter bertipe type
+2. Membuat function yang menerima parameter bertipe type
 
     ```
     function sambutPengguna(user: Pengguna): void
     ```
 
-3. Menggunakan properti dari type dalam fungsi
+3. Menggunakan properti dari type dalam function
 
     ```
     console.log(`Halo, ${user.nama}!`);
@@ -189,7 +189,7 @@ Dalam TypeScript, *type* digunakan untuk mendefinisikan kontrak tipe atau bentuk
     };
     ```
 
-6. Memanggil fungsi dengan objek sebagai argumen
+6. Memanggil function dengan objek sebagai argumen
 
     ```
     sambutPengguna(pengguna1);
@@ -205,7 +205,7 @@ Dalam TypeScript, *type* digunakan untuk mendefinisikan kontrak tipe atau bentuk
     };
     ```
 
-8. Memanggil fungsi dengan objek lain sebagai argumen
+8. Memanggil function dengan objek lain sebagai argumen
 
     ```
     sambutPengguna(pengguna2);
@@ -213,7 +213,7 @@ Dalam TypeScript, *type* digunakan untuk mendefinisikan kontrak tipe atau bentuk
 
 ### Penjelasan
 
-kita menggunakan **type** untuk mendefinisikan struktur data **Pengguna**. Kemudian, fungsi **sambutPengguna** menggunakan parameter bertipe **Pengguna**. Objek **pengguna1** dan **pengguna2** dibuat sesuai dengan tipe **Pengguna** dan digunakan sebagai argumen saat memanggil fungsi. **type** dapat digunakan untuk membuat alias untuk tipe data yang kompleks.
+kita menggunakan **type** untuk mendefinisikan struktur data **Pengguna**. Kemudian, function **sambutPengguna** menggunakan parameter bertipe **Pengguna**. Objek **pengguna1** dan **pengguna2** dibuat sesuai dengan tipe **Pengguna** dan digunakan sebagai argumen saat memanggil function. **type** dapat digunakan untuk membuat alias untuk tipe data yang kompleks.
 
 ## Perbedaan antara interface dan type:
 
