@@ -10,7 +10,6 @@ function logMethod(target: any, key: string, descriptor: PropertyDescriptor) {
 
     return result;
   };
-
   return descriptor;
 }
 
